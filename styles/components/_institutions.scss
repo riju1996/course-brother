@@ -1,0 +1,32 @@
+// Institutions and Universities section styling
+.ins_uni {
+  width: 100%;
+  height: 90vh;
+  &__title {
+    font-size: $section_title_size;
+    letter-spacing: $section_title_spacing;
+    color: $rusty-red;
+    font-weight: $section_title_weight;
+    text-align: center;
+    padding-top: 4rem;
+  }
+  &__gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 8rem;
+    height: 50vh;
+    justify-content: space-between;
+    align-content: space-between;
+    img {
+      width: 22%;
+      height: 14vh;
+      transition: 0.3s;
+      filter: grayscale(1);
+      cursor: pointer;
+      &:hover {
+        filter: grayscale(0);
+      }
+    }
+  }
+}
